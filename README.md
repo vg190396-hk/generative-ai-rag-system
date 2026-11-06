@@ -63,6 +63,8 @@ streamlit run app.py
 
 Streamlit will print a local URL, usually `http://localhost:8501`.
 
+The application code and repository have been uploaded. Full live testing of the OpenAI-powered workflow requires an API key with available credits.
+
 ## How to use
 
 1. Open the app in your browser.
@@ -127,24 +129,27 @@ The `.env` file supports:
 
 ```text
 generative-ai-rag-system/
+│
 ├── app.py
 ├── config.py
+│
 ├── rag/
 │   ├── __init__.py
 │   ├── document_loader.py
 │   ├── text_splitter.py
 │   ├── vector_store.py
 │   └── qa_chain.py
+│
 ├── utils/
 │   ├── __init__.py
 │   └── helpers.py
-├── .env
+│
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
-
+The .env file is created locally by each user and is intentionally excluded from version control to protect API credentials
 ## Technologies
 
 Python · LangChain · UnstructuredURLLoader · OpenAI Embeddings · FAISS · Streamlit · PyPDF
